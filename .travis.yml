@@ -4,7 +4,7 @@ services:
   - docker
 
 before install:
-  - docker build -t ammar1ammar1/react-test -f ./client/Dcokerfile.dev ./client
+  - docker build -t ammar1ammar1/react-test -f ./client/Dockerfile.dev ./client
 
 script:
    - docker run -e CI=true ammar1ammar1/react-test npm test
