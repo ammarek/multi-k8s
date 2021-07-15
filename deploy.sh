@@ -1,6 +1,6 @@
 docker build -t ammar1ammar1/multi-client:latest -t ammar1ammar1/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t ammar1ammar1/multi-server:latest -t ammar1ammar1/multi-server:$SHA -f ./server/Dockerfile ./server
-docker built -t ammar1ammar1/multi-worker:latest -t ammar1ammar1/multi-worker:$SHA -f ./worker/Dockerfile ./worker 
+docker build -t ammar1ammar1/multi-worker:latest -t ammar1ammar1/multi-worker:$SHA -f ./worker/Dockerfile ./worker 
 docker push ammar1ammar1/multi-client:latest
 docker push ammar1ammar1/multi-server:latest
 docker push ammar1ammar1/multi-worker:latest
